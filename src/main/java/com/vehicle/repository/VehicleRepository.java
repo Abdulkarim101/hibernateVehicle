@@ -2,9 +2,11 @@ package com.vehicle.repository;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
 import com.hibernate.vehicle.entity.VehicleEntity;
 
+@Repository
 public class VehicleRepository {
 
 	private SessionFactory sessionFactory;
