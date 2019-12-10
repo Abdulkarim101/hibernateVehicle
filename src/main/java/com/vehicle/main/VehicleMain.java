@@ -16,13 +16,13 @@ public class VehicleMain {
 		VehicleRepository vr = (VehicleRepository) act.getBean("vehicleRepository");
 		
 		VehicleEntity ve = new VehicleEntity();
-		ve.setMake("Toyota");
-		ve.setModle("Prius");
-		ve.setColor("Gray");
-		ve.setLicanse("IED49877859");
-		ve.setVyear("2010");
+		ve.setMake("Honda");
+		ve.setModle("Accord");
+		ve.setColor("Black");
+		ve.setLicanse("IED488866859");
+		ve.setVyear("2019");
 		ve.setVclass("4 door");
-		ve.setVinNo("VIN33449879709");
+		ve.setVinNo("VIN300000709");
 		
 		vr.save(ve);
 		
