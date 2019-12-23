@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "vehicle")
 public class VehicleEntity {
-// this is new commit
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
