@@ -8,9 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Vehicle")
+@Table(name = "vehicle")
 public class VehicleEntity {
-
+// this is new commit
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -18,8 +18,8 @@ public class VehicleEntity {
 	@Column(name = "make")
 	private String make;
 
-	@Column(name = "modle")
-	private String modle;
+	@Column(name = "model")
+	private String model;
 
 	@Column(name = "color")
 	private String color;
@@ -27,13 +27,13 @@ public class VehicleEntity {
 	@Column(name = "licanse")
 	private String licanse;
 
-	@Column(name = "vyear")
+	@Column(name = "year")
 	private String vyear;
 
-	@Column(name = "vclass")
+	@Column(name = "class")
 	private String vclass;
 
-	@Column(name = "vinNo")
+	@Column(name = "vin")
 	private String vinNo;
 
 	public Long getId() {
@@ -52,12 +52,12 @@ public class VehicleEntity {
 		this.make = make;
 	}
 
-	public String getModle() {
-		return modle;
+	public String getModel() {
+		return model;
 	}
 
-	public void setModle(String modle) {
-		this.modle = modle;
+	public void setModel(String modle) {
+		this.model = modle;
 	}
 
 	public String getColor() {
@@ -99,5 +99,12 @@ public class VehicleEntity {
 	public void setVinNo(String vinNo) {
 		this.vinNo = vinNo;
 	}
+
+	@Override
+	public String toString() {
+		return "VehicleEntity [id=" + id + ", make=" + make + ", modle=" + model + ", color=" + color + ", licanse="
+				+ licanse + ", vyear=" + vyear + ", vclass=" + vclass + ", vinNo=" + vinNo + "]";
+	}
+	
 
 }
