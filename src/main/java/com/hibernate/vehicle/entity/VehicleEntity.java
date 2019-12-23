@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "vehicle")
 public class VehicleEntity {
-// jan
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
